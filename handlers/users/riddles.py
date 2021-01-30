@@ -11,6 +11,7 @@ from states import Test
 async def enter_test(message: types.Message):
     await message.answer("The test is started.\n"
                          "What can fill a room but takes up no space ?")
+    #zapisujemy pierwszą odpowiedż do pamjęci
     await Test.Q1.set()
 
 
@@ -21,11 +22,13 @@ async def answer_q1(message: types.Message, state: FSMContext):
     await state.update_data(answer1=answer)
     await message.answer("Question 2.\n"
                          "If you drop me I’m sure to crack, but give me a smile and I’ll always smile back. What am I?")
+    # zapisujemy drugą odpowiedż do pamjęci
     await Test.Q2.set()
 
 
 @dp.message_handler(state=Test.Q2)
 async def answer_q2(message: types.Message, state: FSMContext):
+    #wysyłanie poprawnej odpowiedzi
     answer = message.text
     await state.update_data(answer2=answer)
     data = await  state.get_data()

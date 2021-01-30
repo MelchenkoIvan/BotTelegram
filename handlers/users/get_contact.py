@@ -16,7 +16,9 @@ async def share_number(message: types.Message):
 
 @dp.message_handler(content_types=types.ContentType.CONTACT)
 async def get_contact(message: types.Message):
+    #zapisyłanie contakty
     contact = message.contact
+    #wysyłanie odpowiedzi
     await message.answer(f"Thanks, {contact.full_name}.\n"
                          f"Your phone number {contact.phone_number} was get. Please wait.",
                          reply_markup=ReplyKeyboardRemove())

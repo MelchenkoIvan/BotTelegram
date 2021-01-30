@@ -7,6 +7,7 @@ from data.locations import Shops
 
 R = 6378.1
 
+#funkcja do wyliczenia distancji
 def calc_distance(lat1, lon1, lat2, lon2):
     lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
     # haversine formula
@@ -18,7 +19,7 @@ def calc_distance(lat1, lon1, lat2, lon2):
     km = 6371 * c
     return ceil(km * 1000)
 
-
+#funkcja wybiera najbliższe sklepy
 def choose_shortest(location: types.Location):
     distances = list()
     for shop_name, shop_location in Shops:

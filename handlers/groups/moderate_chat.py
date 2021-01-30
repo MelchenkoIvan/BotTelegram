@@ -10,7 +10,7 @@ from aiogram.utils.exceptions import BadRequest
 from filters import IsGroup, AdminFilter
 from loader import dp, bot
 
-
+#Enable Read Only mode
 @dp.message_handler(IsGroup(), Command("ro"), AdminFilter())
 async def read_only_mode(message: types.Message):
     member = message.reply_to_message.from_user
@@ -40,7 +40,7 @@ async def read_only_mode(message: types.Message):
     await message.delete()
     await service_message.delete()
 
-
+#Disable Read Only mode
 @dp.message_handler(IsGroup(), Command("unro"), AdminFilter())
 async def undo_read_only_mode(message: types.Message):
     member = message.reply_to_message.from_user
@@ -66,7 +66,7 @@ async def undo_read_only_mode(message: types.Message):
     await message.delete()
     await service_message.delete()
 
-
+#Ban user
 @dp.message_handler(IsGroup(), Command("ban", prefixes="!/"), AdminFilter())
 async def ban_user(message: types.Message):
     member = message.reply_to_message.from_user
@@ -83,7 +83,7 @@ async def ban_user(message: types.Message):
     await message.delete()
     await service_message.delete()
 
-
+#Unban user
 @dp.message_handler(IsGroup(), Command("unban", prefixes="!/"), AdminFilter())
 async def unban_user(message: types.Message):
     member = message.reply_to_message.from_user

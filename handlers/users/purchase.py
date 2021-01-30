@@ -9,15 +9,15 @@ from loader import dp
 
 
 @dp.message_handler(Command("products"))
+# wywoływanie InlineKeyboardMarkup from chpice_buttons
 async def show_items(message: Message):
     await message.answer(text="What you want?", reply_markup=choice)
 
 
 @dp.callback_query_handler(buy_callback.filter(item_name="pear"))
 async def buying_pear(call: CallbackQuery, callback_data: dict):
-    # await bot.answer_callback_query(callback_query_id=call.id)
-    # Обязательно сразу сделать answer, чтобы убрать "часики" после нажатия на кнопку.
-    # Укажем cache_time, чтобы бот не получал какое-то время апдейты, тогда нижний код не будет выполняться.
+    # Pamiętaj, aby natychmiast udzielić odpowiedzi, aby usunąć „zegarek” po naciśnięciu przycisku.
+    # Określ cache_time, aby bot nie otrzymywał aktualizacji przez jakiś czas, wtedy poniższy kod nie zostanie wykonany.
     await call.answer(cache_time=60)
 
     quantity = callback_data.get("quantity")
@@ -36,8 +36,8 @@ async def buying_apple(call: CallbackQuery, callback_data: dict):
 
 @dp.callback_query_handler(text="cancel")
 async def cancel_buying(call: CallbackQuery):
-    # Ответим в окошке с уведомлением!
+    # Odpowiemy w okienku powiadomienia!
     await call.answer("You canceled this purchasew!", show_alert=True)
 
-    # Вариант 1 - Отправляем пустую клваиатуру изменяя сообщение, для того, чтобы ее убрать из сообщения!
+    # Wysyłamy pustą klawiaturę, zmieniając wiadomość, aby usunąć ją z wiadomości!
     await call.message.edit_reply_markup(reply_markup=None)

@@ -37,7 +37,9 @@ Bot jest gotowy do wykorzystania.
  
  ### Linki :
  Tu możesz wyszukać swój id [ShowJsonBot](https://web.telegram.org/#/im?p=@ShowJsonBot). 
+ 
  Dodatkowa informacja [connect-telegram](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-telegram?view=azure-bot-service-4.0). 
+ 
  Rejestracja bota [BotFather]( https://web.telegram.org/#/im?p=@BotFather). 
  
  

@@ -1,4 +1,4 @@
-BotTelegram
+##BotTelegram
 Telegramm bot dla pracy ta modyfikacji grup.
 
 Napisany za pomocą bibliotek:

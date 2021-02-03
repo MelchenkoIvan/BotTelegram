@@ -21,20 +21,19 @@ Ma taki funkcji jak :
 * /show_on_map - Place for eating
 * /callback - We will call you
         
-###### Instaliacja / test:
+### Instaliacja / test:
  Pobrać bota, zainstlować requirements, zmienić BotToken w pliku 
- 	***.env BOT_TOKEN= /*your bot token from Bot Father*/,***
+ >	***.env BOT_TOKEN= /*your bot token from Bot Father*/,***
  w pliku data/config.py zmienic 
- 	***admins = [
-    /*your telegram id witch can be getted
-   @ShowJsonBot here*/,
-]***
+> 	***admins = [
+>    /*your telegram id witch can be getted
+>   @ShowJsonBot here*/,]***
  Tu możesz wyszukać swój id [ShowJsonBot](https://web.telegram.org/#/im?p=@ShowJsonBot). 
  Uruchomić plik app. Dodać do grupy.
 
  Bot jest gotowy do wykorzystania.
  
- ###### Linki :
+ ### Linki :
  
  Dodatkowa informacja [connect-telegram](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-telegram?view=azure-bot-service-4.0). 
  Rejestracja bota [BotFather]( https://web.telegram.org/#/im?p=@BotFather). 

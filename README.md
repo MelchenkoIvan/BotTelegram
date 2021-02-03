@@ -1,4 +1,4 @@
-##BotTelegram
+## BotTelegram
 Telegramm bot dla pracy ta modyfikacji grup.
 
 Napisany za pomocą bibliotek:
@@ -21,7 +21,7 @@ Napisany za pomocą bibliotek:
         '/show_on_map - Place for eating',
         '/callback - We will call you'
         
-#Instaliacja / test:
+# Instaliacja / test:
  Pobrać bota,
  zainstlować requirements,
  zmienić BotToken w pliku .env BOT_TOKEN= /*your bot token from Bot Father*/,
@@ -35,7 +35,7 @@ Napisany za pomocą bibliotek:
  Dodać do grupy.
  Bot jest gotowy do wykorzystania.
  
- #Linki :
+ # Linki :
  https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-telegram?view=azure-bot-service-4.0
  https://web.telegram.org/#/im?p=@BotFather
  

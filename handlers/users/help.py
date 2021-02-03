@@ -6,10 +6,11 @@ from aiogram.dispatcher.filters.builtin import CommandHelp
 from loader import dp
 from utils.misc import rate_limit
 
+""" #odpowiedż do komandy help """
+
 
 @rate_limit(5, 'help')
 @dp.message_handler(CommandHelp())
-#odpowiedż do komandy help
 async def bot_help(message: types.Message):
     text = [
         'Command list: ',

@@ -1,7 +1,9 @@
 from aiogram import types
 from aiogram.dispatcher.filters import BoundFilter
 
-#filter sprawdza na prawo admina
+"""filter sprawdza na prawo admina"""
+
+
 class AdminFilter(BoundFilter):
     async def check(self, message: types.Message) -> bool:
         member = await message.chat.get_member(message.from_user.id)

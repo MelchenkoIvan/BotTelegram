@@ -33,6 +33,9 @@ Napisany za pomocą bibliotek:
  https://web.telegram.org/#/im?p=@ShowJsonBot tu możesz wyszukać swój id.  
  Uruchomić plik app.
  Dodać do grupy.
+ - George Washington
+- John Adams
+- Thomas Jefferson
  Bot jest gotowy do wykorzystania.
  
  ## Linki :

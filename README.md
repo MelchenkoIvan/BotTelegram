@@ -6,10 +6,10 @@ Napisany za pomocą bibliotek:
   aiohttp>=3.6.2
   python-dotenv
   
- Ma taki funkcji jak :
-        * /set_photo - Set the photo in the chat
-        * /set_title - Set the chat name
-        - '/set_description - Set the description of the chat',
+Ma taki funkcji jak :
+* /set_photo - Set the photo in the chat
+* /set_title - Set the chat name
+* /set_description - Set the description of the chat',
         - '/ro - Enable Read Only mode',
         - '/unro - Disable Read Only mode',
         - '/ban - Ban user',
@@ -33,9 +33,7 @@ Napisany za pomocą bibliotek:
  https://web.telegram.org/#/im?p=@ShowJsonBot tu możesz wyszukać swój id.  
  Uruchomić plik app.
  Dodać do grupy.
- - George Washington
-- John Adams
-- Thomas Jefferson
+
  Bot jest gotowy do wykorzystania.
  
  ## Linki :

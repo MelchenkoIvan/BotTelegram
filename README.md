@@ -7,8 +7,8 @@ Napisany za pomocą bibliotek:
   python-dotenv
   
  Ma taki funkcji jak :
-        * /set_photo - Set the photo in the chat,
-        * /set_title - Set the chat name,
+        * /set_photo - Set the photo in the chat
+        * /set_title - Set the chat name
         - '/set_description - Set the description of the chat',
         - '/ro - Enable Read Only mode',
         - '/unro - Disable Read Only mode',
